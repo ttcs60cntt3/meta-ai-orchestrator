@@ -1,0 +1,26 @@
+[package]
+name = "meta-ai-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "meta-ai-cli"
+path = "src/main.rs"
+
+[dependencies]
+# Workspace deps
+tokio.workspace = true
+anyhow.workspace = true
+serde.workspace = true
+tracing.workspace = true
+
+# CLI
+clap.workspace = true
+ratatui.workspace = true
+crossterm.workspace = true
+
+# Local deps
+meta-ai-common = { path = "../common" }
+meta-ai-core = { path = "../core" }

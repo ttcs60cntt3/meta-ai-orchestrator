@@ -1,0 +1,36 @@
+[package]
+name = "meta-ai-orchestrator-engine"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+# Workspace deps
+tokio.workspace = true
+tokio-stream.workspace = true
+async-trait.workspace = true
+futures.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+uuid.workspace = true
+chrono.workspace = true
+parking_lot.workspace = true
+dashmap.workspace = true
+
+# Local deps
+meta-ai-common = { path = "../common" }
+meta-ai-core = { path = "../core" }
+
+# DAG and scheduling
+petgraph = "0.6"
+priority-queue = "1.3"
+rand = "0.8"
+
+[dev-dependencies]
+tokio-test = "0.4"
+mockall.workspace = true
+proptest.workspace = true

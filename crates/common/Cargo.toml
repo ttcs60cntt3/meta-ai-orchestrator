@@ -1,0 +1,34 @@
+[package]
+name = "meta-ai-common"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+# Error handling
+anyhow.workspace = true
+thiserror.workspace = true
+
+# Serialization
+serde.workspace = true
+serde_json.workspace = true
+
+# Observability
+tracing.workspace = true
+opentelemetry.workspace = true
+prometheus.workspace = true
+
+# Utils
+uuid.workspace = true
+chrono.workspace = true
+secrecy = { version = "0.8", features = ["serde"] }
+once_cell = "1.19"
+config = "0.14"
+reqwest = { version = "0.11", features = ["json", "stream", "rustls-tls"] }
+tracing-opentelemetry = "0.22"
+opentelemetry-otlp = "0.14"
+futures = "0.3"
+
+[dev-dependencies]
+proptest.workspace = true
